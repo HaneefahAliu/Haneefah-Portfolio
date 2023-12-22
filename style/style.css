@@ -1,0 +1,411 @@
+/* Font */
+@font-face {
+    font-family: 'Ade';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/ade-display/Ade-Display.otf") format('woff');
+}
+/* End of Font */
+
+
+
+/* General Styling */
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F5F0E6;
+    color: #155B00;
+    min-height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+}
+
+* {
+    outline: none !important
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #155B00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #155B00;
+    opacity: .7;
+}
+
+img {
+    max-width: 100%;
+}
+
+.line {
+    border-bottom: 1px solid #457337;
+    margin: 16px 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1
+}
+/* End of General Styling */
+
+
+/* Header */
+.znav-container {
+    background-color: #F5F0E6;
+    width: 80%;
+    margin: auto;
+}
+
+.znav-container:not([class*="sticky-"]) {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    z-index: 1030
+}
+
+@media (max-width: 61.99em) {
+    .znav-container {
+        max-height: 100vh;
+        overflow-y: auto
+    }
+}
+
+.znav-fixed {
+    position: fixed !important;
+}
+
+.znav-container .navbar {
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    transition: all 0.2s ease-in-out;
+    padding: 20px 0;
+    line-height: 1.5;
+    border-bottom: 1px solid #3C762B;
+}
+
+.znav-container .navbar a.navbar-brand {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.znav-container .navbar button.navbar-toggler {
+    -webkit-transform: translate3d(25px, -5px, 0);
+    transform: translate3d(25px, -5px, 0);
+    padding: 0
+}
+
+.znav-container ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+@media (min-width: 62em) {
+    .znav-container ul {
+        margin-left: -1.2rem
+    }
+}
+
+.znav-container ul li {
+    padding: 0;
+    position: relative;
+}
+
+.znav-container ul li .active {
+    color: #155B00;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.znav-container ul li a {
+    color: #155B00;
+    border: 1px solid transparent;
+    display: block;
+    padding: .4rem 1.2rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul li a:not(.btn) {
+        margin-left: -1.2rem
+    }
+}
+
+.znav-container .dropdown,
+ .znav-container .megamenu {
+    border-radius: 3px
+}
+
+@media (max-width: 61.99em) {
+    .znav-container .dropdown,
+     .znav-container .megamenu {
+        display: none
+    }
+}
+
+@media (min-width: 62em) {
+    .znav-container .dropdown, 
+    .znav-container .megamenu {
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+        opacity: 0;
+        display: none
+    }
+}
+
+.znav-container .megamenu ul li a {
+    font-weight: 400;
+    padding: .2rem 1.2rem
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul.navbar-nav {
+        padding: 1.2rem 0
+    }
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul.navbar-nav>li .btn {
+        width: 100%;
+        margin: 5px 0
+    }
+}
+
+.znav-container .megamenu, 
+.znav-container .dropdown {
+    color: #155B00;
+    background-color: #000;
+}
+
+@media (min-width: 62em) {
+    .znav-container .megamenu,
+    .znav-container .dropdown {
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4)
+    }
+}
+
+.hamburger {
+    padding: 8px
+}
+
+.hamburger .hamburger-box {
+    height: 0;
+    width: 30px
+}
+
+.hamburger .hamburger-box .hamburger-inner, 
+.hamburger .hamburger-box .hamburger-inner::after, 
+.hamburger .hamburger-box .hamburger-inner::before {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #155B00
+}
+
+.hamburger-inner::before {
+    top: -7px
+}
+
+.hamburger--emphatic .hamburger-inner::after {
+    top: 7px
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+/* End of Header */
+
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #F5F0E6;
+    padding: 40px;
+}
+
+.footer-text a {
+    background-color: #F5F0E6;
+    color: #155B00;
+    border: 1px solid #155B00;
+    border-radius: 100px;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.footer a:hover {
+    background-color: #155B00;
+    color: #F5F0E6;
+    text-decoration: none;
+}
+
+.social a {
+    color: #F5F0E6;
+    font-weight: 400;
+}
+
+.social a:hover {
+    background-color: #0F0905;
+    opacity: .5;
+}
+/* End of Footer */
+
+
+/* About */
+.important {
+    color: #8C4518;
+    font-weight: 500;
+}
+
+a.email {
+    text-decoration: underline;
+    color: #8C4518;
+}
+
+a.email:hover {
+    opacity: .8;
+}
+
+.skill:hover {
+    color: #8C4518;
+}
+/* End of About */
+
+
+/* Projects */
+.project-card {
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.project-btn {
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+.project-btn:hover {
+    text-decoration: none;
+    border-bottom: 0px;
+    transition: ease-in-out;
+    color: #FFF;
+}
+/* End of Projects */
+
+
+/* Contact */
+.contact a {
+    color: #155B00;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    opacity: .8;
+    text-decoration: none;
+}
+/* End of Contact */
+
+
+/* Text Styles and Weight */
+.ade {
+    font-family: 'Ade', sans-serif; 
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.large-text {
+    font-size: 180px;
+}
+/* End of Text Styles and Weight */
+
+
+/* Spacings */
+.pt-6 {
+    padding-top: 10rem;
+}
+
+.pt-7 {
+    padding-top: 16rem;
+}
+
+.pt-8 {
+    padding-top: 18rem;
+}
+
+.pt-9 {
+    padding-top: 8rem;
+}
+
+.pt-10 {
+    padding-top: 12rem;
+}
+
+.pb-6 {
+    padding-bottom: 10rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+
+/* End of Spacings */
+
+
