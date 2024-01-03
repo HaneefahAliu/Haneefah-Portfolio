@@ -409,3 +409,13 @@ a.email:hover {
 /* End of Spacings */
 
 
+/* Responsive Design  */
+@media (max-width: 62em) {
+    .large-text {
+        font-size: 80px;
+    }
+
+    .mail {
+        font-size: 32px;
+    }
+}
