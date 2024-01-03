@@ -412,7 +412,7 @@ a.email:hover {
 /* Responsive Design  */
 @media (max-width: 62em) {
     .large-text {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .mail {
