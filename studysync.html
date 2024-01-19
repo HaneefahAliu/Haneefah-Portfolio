@@ -26,6 +26,12 @@
     <link href="style/style.css" rel="stylesheet" />
 </head>
 <body>
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-caret-up-fill"></i></button>
+    <!-- end of back to top button -->
+
+
     <!-- navbar -->
     <div class="znav-container znav-fixed py-1" id="znav-container">
         <div class="container-fluid">
@@ -61,27 +67,18 @@
     <section>
         <div class="container pt-6 pb-4">
             <h1 class="pb-3">StudySync: Student collaboration made easy</h1>
-            <p class="fs-20 pb-4">Learning is a very important part of life. EduLearn is an online educational platform designed to make teaching easier by extending learning beyond the physical classroom. This platform provides ease of use and simplicity in teaching and learning. </p>
 
-            <div class="row pb-5">
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">role:</p>
-                    <p class="fs-20 fw-500 pb-2">Research</p>
-                    <p class="fs-20 fw-500 pb-2">Protoyping</p>
-                    <p class="fs-20 fw-500 pb-2">Visual Design</p>
-                    <p class="fs-20 fw-500 pb-2">User Testing</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">timeline:</p>
-                    <p class="fs-20 fw-500 pb-2">10 weeks</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">tools:</p>
-                    <p class="fs-20 fw-500 pb-2">Microsoft Form</p>
-                    <p class="fs-20 fw-500 pb-2">Figma</p>
-                </div>
+            <div class="d-flex justify-content-between pb-5">
+                <p class="fs-20 pb-4 sec-text">Research | Protoyping | Visual Design | User Testing</p>
+                <p class="fs-20 pb-4 sec-text">10 weeks</p>
             </div>
-            <img src="assets/images/SS-cover.png" alt="Project Image">
+
+            <div>
+                <h2 class="fw-500 pb-2">overview.</h2>
+                <p class="fs-20 pb-4 sec-text">StudySync is a web application that is designed to provide tools and features to enhance team collaboration, allowing students to work together on projects, assignments, and interactive activities, thus promoting a sense of shared responsibility and achievement.</p>
+            </div>
+            
+            <img src="assets/images/studysync-1.png" alt="StudySync Image">
         </div>
     </section>
     <!-- End of Heading -->
@@ -93,24 +90,65 @@
             <!-- problem  -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">the problem.</h2>
-                <p class="fs-20 pb-4">The concept of learning in educational institutions has evolved towards collaborative methods, emphasizing group interactions and shared knowledge improvement. However, the efficiency of group learning experiences among students can often be hindered by a lot of issues.</p>
-                <p class="fs-20 pb-4">As a fundamental part of modern teaching approaches, collaborative learning creates a dynamic learning environment that encourages critical thinking, social development, and improved understanding among students but despite all these benefits, a number of challenges still hinder the seamless execution of group learning experiences</p>
+                <p class="fs-20 pb-4 sec-text">The concept of learning in educational institutions has evolved towards collaborative methods, emphasizing group interactions and shared knowledge improvement. However, the efficiency of group learning experiences among students can often be hindered by a lot of issues. As a fundamental part of modern teaching approaches, collaborative learning creates a dynamic learning environment that encourages critical thinking, social development, and improved understanding among students but despite all these benefits, a number of challenges still hinder the seamless execution of group learning experiences</p>
+                <p class="fs-20 pb-4 sec-text">Despite its recognized benefits, several challenges hinder the seamless execution of group learning experiences like unequal participation, coordination issues and lack of communication and effective feedback and evaluation methods. As such, It is critical to solve these issues in order to create an atmosphere where students can fully benefit from collaborative learning as education continues to change and adapt to new requirements </p>
             </div>
             <!-- end of problem  -->
 
-            <!-- the process  -->
+            <!-- research  -->
             <div class="pb-5">
-                <h2 class="fw-500 pb-2">the process.</h2>
-                <p class="fs-20 pb-4">The ultimate goal of this project is to create a platform where the online teaching-learning process would be as easy and effective as the physical method. This platform focuses on providing a comprehensive solution; from sharing learning materials, assigning and evaluating assessments, to tracking progress.</p>
+                <h2 class="fw-500 pb-2">research.</h2>
+                <p class="fs-20 pb-4 sec-text">To get things started, I carried out extensive research on students and collaborative learning by reviewing academic journals and industry publications to identify and analyse the current challenges and constraints of collaborative learning in educational settings, as well as best practices in designing an inclusive and user-centered solution. </p>
+                <ul>
+                    <li class="fs-20 pb-4 sec-text">Collaborative learning is a method of teaching that focuses on student interaction, cooperation, and information sharing. Collaborative learning provides a method of dealing with people that respects and recognises the strengths and contributions of individual group members. </li>
+                    <li class="fs-20 pb-4 sec-text">There are a lot of reasons why students may struggle with collaborative learning and some of these reasons include; lack of participation or wanting to showcase the work of others as theirs, some students also want to be credited for the work they do and individual contributions might not be acknowledged when they work together as a group.  Introverted students may be nervous about collaborative learning given that it demands them to communicate verbally, and they cannot choose to stay inactive or uninterested.</li>
+                    <li class="fs-20 pb-4 sec-text">Computer-Supported Collaborative Learning are software solutions that are made to help students and teachers engage in collaborative learning activities. The field of collaborative learning supported by technology (CSCL) is a relatively new area of study that focuses on how technology may improve interaction among peers and collaborative effort as well as how technology and collaboration can make it easier for individuals in the community to exchange and disseminate information and expertise</li>
+                    <li class="fs-20 pb-4 sec-text">For computer-supported collaborative learning (CSCL), it is critical to coordinate group members' participation in the learning process. Putting students in groups and instructing them to collaborate does not guarantee natural collaboration. A wide range of features are usually included in these tools to facilitate productive group learning.</li>
+                </ul>
             </div>
-            <!-- end of the process  -->
+            <!-- end of research  -->
 
-            <!-- solution -->
+            <!-- user interview  -->
             <div class="pb-5">
-                <h2 class="fw-500 pb-2">solution.</h2>
-                <p class="fs-20 pb-4">The ultimate goal of this project is to create a platform where the online teaching-learning process would be as easy and effective as the physical method. This platform focuses on providing a comprehensive solution; from sharing learning materials, assigning and evaluating assessments, to tracking progress.</p>
+                <h2 class="fw-500 pb-2">user interview.</h2>
+                <p class="fs-20 pb-4 sec-text">I interviewed 25 university undergraduate or postgraduate students ranging in age from 18 to 35 to learn about their experiences with collaborative learning, as well as their needs and pain points, and their ideal recommendations for a collaboration system. I was able to acquire several important findings from these interviews, which informed the design choices for this application. </p>
+                <img src="assets/images/studysync - insights.png" alt="Insight from research">
             </div>
-            <!-- end of solution -->
+            <!-- end of user interview  -->
+
+            <!-- information architecture  -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">information architecture.</h2>
+                <p class="fs-20 pb-5 sec-text">To demonstrate the steps users would take to complete the activities in the app, the information architecture for the application was created. The application's navigation structure and overall user experience were also designed with the assistance of the information architecture, which facilitated the organisation and structuring of data.</p>
+                <img src="assets/images/studysync - IA.png" alt="Information Architecture">
+            </div>
+            <!-- information architecture  -->
+
+            <!-- ideation  -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">ideation.</h2>
+                <p class="fs-20 pb-4 sec-text">These sketches showed the general layout and organisation of the elements and content of the suggested user interface illustrating how each feature was to be used and various ways that it might be represented on the user interface.</p>
+                <img src="assets/images/studysync - sketches.png" alt="sketches">
+            </div>
+            <!-- ideation  -->
+
+            <!-- style components -->
+            <!-- <div class="pb-5">
+                <h2 class="fw-500 pb-2">style components.</h2>
+                <p class="fs-20 pb-4 sec-text"></p>
+                <img src="" alt="style guide">
+            </div> -->
+            <!-- end of style components -->
+
+            <!-- design -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">StudySync app.</h2>
+                <p class="fs-20 pb-4 sec-text"></p>
+                <img src="assets/images/studysync-design1.png" alt="design">
+                <img src="assets/images/studysync-design2.png" alt="design">
+                <img src="assets/images/studysync-design3.png" alt="design">
+            </div>
+            <!-- end of design -->
         </div>
     </section>
     <!-- end of content -->
@@ -119,7 +157,7 @@
     <section>
         <div class="container">
             <div class="pb-5">
-                <p class="fs-20 pb-4">View protoype <a class="fw-600" target="_blank" href="">here</a></p>
+                <p class="fs-20 pb-4">View full protoype <a class="fw-500" style="color: #8C4518;" target="_blank" href="https://www.figma.com/proto/b4x8DQRG4qSQKFkx3btnwt/StudySync?page-id=99%3A7754&type=design&node-id=118-10474&viewport=415%2C696%2C0.8&t=dQG94q92MsXNSuBx-1&scaling=scale-down&starting-point-node-id=118%3A10474&mode=design">here</a></p>
             </div>
 
             <div>
@@ -156,7 +194,7 @@
         <div class="pt-5 social">
             <div class="d-flex justify-content-between">
                 <div>
-                    <p>Made with ❤️  by Haneefah.</p>
+                    <p>Designed and developed by <a href="https://haneefahaliu.com/" style="text-decoration: underline;">Haneefah</a></p>
                 </div>
                 <div>
                     <a class="pr-5 fs-18 fw-500" href="https://www.instagram.com/haneefah.design/" target="_blank" class="mr-3">instagram</a>
@@ -170,9 +208,10 @@
     <!-- end of footer -->
 
 
-    <!-- bootstrap script  -->
+    <!-- scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/top.js"></script>
 </body>
 </body>
 </html>

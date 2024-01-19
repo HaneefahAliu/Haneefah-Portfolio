@@ -26,6 +26,11 @@
     <link href="style/style.css" rel="stylesheet" />
 </head>
 <body>
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-caret-up-fill"></i></button>
+    <!-- end of back to top button -->
+
     <!-- navbar -->
     <div class="znav-container znav-fixed py-1" id="znav-container">
         <div class="container-fluid">
@@ -61,28 +66,18 @@
     <section>
         <div class="container pt-6 pb-4">
             <h1 class="pb-3">ForWheels: An augmented reality experience</h1>
-            <p class="fs-20 pb-4">In a rapidly evolving automotive industry, the need for innovative training and education solutions has become imperative. ForWheels is an augmented reality (AR) application designed to address this need by providing a comprehensive platform for Automotive training and education, design and engineering and car maintenance.</p>
 
-            <div class="row pb-5">
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">role:</p>
-                    <p class="fs-20 fw-500 pb-2">Research</p>
-                    <p class="fs-20 fw-500 pb-2">Protoyping</p>
-                    <p class="fs-20 fw-500 pb-2">Visual Design</p>
-                    <p class="fs-20 fw-500 pb-2">User Testing</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">timeline:</p>
-                    <p class="fs-20 fw-500 pb-2">10 weeks</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="fs-18 pb-2">tools:</p>
-                    <p class="fs-20 fw-500 pb-2">Miro</p>
-                    <p class="fs-20 fw-500 pb-2">Figma</p>
-                    <p class="fs-20 fw-500 pb-2">Adobe Aero</p>
-                </div>
+            <div class="d-flex justify-content-between pb-5">
+                <p class="fs-20 pb-4 sec-text">Research | Protoyping | Visual Design | User Testing</p>
+                <p class="fs-20 pb-4 sec-text">10 weeks</p>
             </div>
-            <img src="assets/images/forwheels-cover.png" alt="Project Image">
+
+            <div>
+                <h2 class="fw-500 pb-2">overview.</h2>
+                <p class="fs-20 pb-4 sec-text">In a rapidly evolving automotive industry, the need for innovative training and education solutions has become imperative. ForWheels is an augmented reality (AR) application designed to address this need by providing a comprehensive platform for Automotive training and education, design and engineering and car maintenance.</p>
+            </div>
+            
+            <img src="assets/images/forwheels-1.png" alt="StudySync Image">
         </div>
     </section>
     <!-- End of Heading -->
@@ -95,8 +90,8 @@
             <!-- problem  -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">the problem.</h2>
-                <p class="fs-20 pb-4">Cars are a huge part of our lives, societies and civilization at large. They make life easier, they’re symbols of status, and they inspire children to dream. </p>
-                <p class="fs-20 pb-4">However, there are gaps in this relationship between man and machine. Many car owners have poor maintenance habits, many engineering students struggle to learn because they see more equations than actual cars while studying, and training technicians is expensive and  hazardous, with risk of heavy artillery misuse leading to life-changing injuries and death sometimes.</p>
+                <p class="fs-20 pb-4 sec-text">Cars are a huge part of our lives, societies and civilization at large. They make life easier, they’re symbols of status, and they inspire children to dream. </p>
+                <p class="fs-20 pb-4 sec-text">However, there are gaps in this relationship between man and machine. Many car owners have poor maintenance habits, many engineering students struggle to learn because they see more equations than actual cars while studying, and training technicians is expensive and  hazardous, with risk of heavy artillery misuse leading to life-changing injuries and death sometimes.</p>
             </div>
             <!-- end of problem  -->
 
@@ -104,10 +99,10 @@
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">project focus.</h2>
                 <ul>
-                    <li class="fs-20 pb-2">Automotive training and education</li>
-                    <li class="fs-20 pb-2">Design and engineering</li>
-                    <li class="fs-20 pb-2">Parts and components</li>
-                    <li class="fs-20 pb-2">Car maintenance</li>
+                    <li class="fs-20 pb-2 sec-text">Automotive training and education</li>
+                    <li class="fs-20 pb-2 sec-text">Design and engineering</li>
+                    <li class="fs-20 pb-2 sec-text">Parts and components</li>
+                    <li class="fs-20 pb-2 sec-text">Car maintenance</li>
                 </ul>
             </div>
             <!-- end of goals  -->
@@ -115,12 +110,12 @@
             <!-- market research  -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">market research.</h2>
-                <p class="fs-20 pb-4">Prior to starting the design of forwheels, an extensive market research study was carried out to gather information about the current state of automotive education and training at the time. The goal of the research was to identify current weaknesses, new market trends, and possible competitors in order to provide guidance for creating an efficient augmented reality application.</p>
+                <p class="fs-20 pb-4 sec-text">Prior to starting the design of forwheels, we conducted an extensive market research study to gather information about the current state of automotive education and training at the time. The goal of the research was to identify current weaknesses, new market trends, and possible competitors in order to provide guidance for creating an efficient augmented reality application.</p>
                 <img class="pb-4" src="assets/images/FW-mr.png" alt="market research">    
             
 
-                <p class="fs-20 pb-4">Once we established the needs of the business from the market research, we conducted user interviews with individuals who fit the product's purpose in order to understand their training requirements and pain points. </p>
-                <p class="fs-20 pb-4">We had two objectives. The first was to gain a deeper understanding of preferred learning methods, and the second was to learn about prevalent habits pertaining to vehicle ownership and maintenance. </p>
+                <p class="fs-20 pb-4 sec-text">Once we established the needs of the business from the market research, we conducted user interviews with individuals who fit the product's purpose in order to understand their training requirements and pain points. </p>
+                <p class="fs-20 pb-4 sec-text">We had two objectives. The first was to gain a deeper understanding of preferred learning methods, and the second was to learn about prevalent habits pertaining to vehicle ownership and maintenance. </p>
             </div>
             <!-- end of market research  -->
 
@@ -128,17 +123,18 @@
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">target audience.</h2>
                 <ul>
-                    <li class="fs-20 pb-2">Automotive Engineers</li>
-                    <li class="fs-20 pb-2">Mechanics and Maintenance Professionals</li>
-                    <li class="fs-20 pb-2">Car Owners</li>
-                    <li class="fs-20 pb-2">learning Specialists/engineering Students</li>
+                    <li class="fs-20 pb-2 sec-text">Automotive Engineers</li>
+                    <li class="fs-20 pb-2 sec-text">Mechanics and Maintenance Professionals</li>
+                    <li class="fs-20 pb-2 sec-text">Car Owners</li>
+                    <li class="fs-20 pb-2 sec-text">learning Specialists/engineering Students</li>
                 </ul>
             </div>
             <!-- end of target audience -->
 
             <!-- empathy map -->
             <div class="pb-5">
-                <p class="fs-20 pb-4">We sorted the information from our interviews using the say-think-feel-do framework to compartmentalise the information and hone in on the emotion behind the users pain points. </p>
+                <h2 class="fw-500 pb-2">empathy map.</h2>
+                <p class="fs-20 pb-4 sec-text">We sorted the information from our interviews using the say-think-feel-do framework to compartmentalise the information and hone in on the emotion behind the users pain points. </p>
                 <img class="pb-5" src="assets/images/FW-em.png" alt="ForWheel Empathy Map">
             </div>
             <!-- end of empathy map -->
@@ -146,68 +142,80 @@
             <!-- findings -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">key realisations.</h2>
-                <p class="fs-20 pb-4">Here are the key realisations and takeaways from the interviews and individuals we spoke with, which we then categorised into several different groups, which include:</p>
+                <p class="fs-20 pb-4 sec-text">Here are the key realisations and takeaways from the interviews and individuals we spoke with, which we then categorised into several different groups, which include:</p>
                 <div class="row pb-5">
                     <div class="col-md-6">
                         <h4 class="fs-24 pb-3"><span class="fw-600 fs-36">01. </span> The eyes have it</h4>
-                        <p class="fs-20 pb-4">Mirror neurons play a huge part in the human learning experience, especially in children. Mimicry is one of the earliest methods of learning we practice.</p>
+                        <p class="fs-20 pb-4 sec-text">Mirror neurons play a huge part in the human learning experience, especially in children. Mimicry is one of the earliest methods of learning we practice.</p>
                         <ul>
-                            <li class="fs-18 pb-2">“I learn by observing what others are doing e.g. mechanics”</li>
-                            <li class="fs-18 pb-2">“I enjoy the practical sessions more than the theoretic ones”</li>
-                            <li class="fs-18 pb-2">“I find it easier to learn by watching people than listening to explanations. I get sleepy when people explain to me.”</li>
+                            <li class="fs-18 pb-2 sec-text">“I learn by observing what others are doing e.g. mechanics”</li>
+                            <li class="fs-18 pb-2 sec-text">“I enjoy the practical sessions more than the theoretic ones”</li>
+                            <li class="fs-18 pb-2 sec-text">“I find it easier to learn by watching people than listening to explanations. I get sleepy when people explain to me.”</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <h4 class="fs-24 pb-3"><span class="fw-600 fs-36">02. </span> Images over text</h4>
-                        <p class="fs-20 pb-4">The human brain processes images 60,000 times faster than text, and 90% of the information we recieve from the world around us is visual.</p>
+                        <p class="fs-20 pb-4 sec-text">The human brain processes images 60,000 times faster than text, and 90% of the information we recieve from the world around us is visual.</p>
                         <ul>
-                            <li class="fs-18 pb-2">“I learn better when I watch tutorials on youtube because it allows me to follow step-by-step”</li>
-                            <li class="fs-18 pb-2">“In my course, we always use technologies such as manufacturing machines so we can see the actual stuff to understand”</li>
-                            <li class="fs-18 pb-2">I love when lecturers demostrate whatever they are trying to explain, I usually don't forget afterwards.</li>
+                            <li class="fs-18 pb-2 sec-text">“I learn better when I watch tutorials on youtube because it allows me to follow step-by-step”</li>
+                            <li class="fs-18 pb-2 sec-text">“In my course, we always use technologies such as manufacturing machines so we can see the actual stuff to understand”</li>
+                            <li class="fs-18 pb-2 sec-text">I love when lecturers demostrate whatever they are trying to explain, I usually don't forget afterwards.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="row pb-5">
                     <div class="col-md-6">
                         <h4 class="fs-24 pb-3"><span class="fw-600 fs-36">03. </span> Cars need attention</h4>
-                        <p class="fs-20 pb-4">It is not enough to just own a car. You have to cater to your car attentively, to get the most out of your experience with it. </p>
+                        <p class="fs-20 pb-4 sec-text">It is not enough to just own a car. You have to cater to your car attentively, to get the most out of your experience with it. </p>
                         <ul>
-                            <li class="fs-18 pb-2">“I always follow the appointment to maintain my car”</li>
-                            <li class="fs-18 pb-2">“Whenever i'm driving i'm always observant and I feel when something is wrong.”</li>
-                            <li class="fs-18 pb-2">“I know my car has problems and needs maintenance by looking at the lights on the dashboard”</li>
+                            <li class="fs-18 pb-2 sec-text">“I always follow the appointment to maintain my car”</li>
+                            <li class="fs-18 pb-2 sec-text">“Whenever i'm driving i'm always observant and I feel when something is wrong.”</li>
+                            <li class="fs-18 pb-2 sec-text">“I know my car has problems and needs maintenance by looking at the lights on the dashboard”</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <h4 class="fs-24 pb-3"><span class="fw-600 fs-36">04. </span> Confidence over time</h4>
-                        <p class="fs-20 pb-4">The more people do things and the more tasks people complete, the more self assured and increasingly confident they become. </p>
+                        <p class="fs-20 pb-4 sec-text">The more people do things and the more tasks people complete, the more self assured and increasingly confident they become. </p>
                         <ul>
-                            <li class="fs-18 pb-2">“Finishing things has helped me lose my fear of making mistakes”</li>
-                            <li class="fs-18 pb-2">“I didn’t have much self belief when I started out, but after a year I’m able to confidently diagnose the car, buy parts and take the engine apart if need be” </li>
-                            <li class="fs-18 pb-2">“These days, I only go to the mechanic if I try and can neither find nor fix the problem myself.” </li>
+                            <li class="fs-18 pb-2 sec-text">“Finishing things has helped me lose my fear of making mistakes”</li>
+                            <li class="fs-18 pb-2 sec-text">“I didn’t have much self belief when I started out, but after a year I’m able to confidently diagnose the car, buy parts and take the engine apart if need be” </li>
+                            <li class="fs-18 pb-2 sec-text">“These days, I only go to the mechanic if I try and can neither find nor fix the problem myself.” </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- end of findings -->
 
-            <!-- solution -->
-            <div class="pb-5">
-                <h2 class="fw-500 pb-2">solution.</h2>
-                <p class="fs-20 pb-5">Forwheels is an automotive learning application that enhances the learning experience of the users by introducting new concepts in a visually engaging manner. It helps grow users confidence in the things they’re already conversant with, and improves automobile maintenance practice using augmented reality technology.</p>
-            </div>
-
+            <!-- persona  -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">persona.</h2>
-                <p class="fs-20 pb-5">Collating and sorting the data we gathered from our interviews, we created these personas to best represent our target users.</p>
+                <p class="fs-20 pb-4 sec-text">Collating and sorting the data we gathered from our interviews, we also created these personas to best represent our target users.</p>
                 <img class="pb-5" src="assets/images/FW-persona1.png" alt="">
                 <img class="pb-5" src="assets/images/FW-persona2.png" alt="">
                 <img class="pb-5" src="assets/images/FW-persona3.png" alt="">
                 <img class="pb-5" src="assets/images/FW-persona4.png" alt="">
             </div>
+            <!-- end of persona -->
 
+            <!-- why ar -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">why AR?</h2>
+                <p class="fs-20 pb-4 sec-text">With the goal of advanced and immersive learning, we had to choose a medium that best demonstrated not just the strengths of our solution, but one that also engaged and enhanced the experience for our target users. </p>
+                <img class="pb-5" src="assets/images/forwheels-ar.png" alt="">
+            </div>
+            <!-- end of why ar -->
+
+            <!-- HLA -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">high level architecture.</h2>
+                <img class="pb-4" src="assets/images/forwheels-hla.png" alt="">
+            </div>
+            <!-- end of HLA -->
+
+            <!-- information architecture  -->
             <div class="pb-5">
                 <h2 class="fw-500 pb-2">information architecture.</h2>
-                <p class="fs-20 pb-5">We organised the application's functions into four categories: learn mode, maintenance mode, freestyle mode, and challenge mode. We then developed a hierarchical navigation system to make it easier to explore these features.</p>
+                <p class="fs-20 pb-4">We organised the application's functions into four categories: learn mode, maintenance mode, freestyle mode, and challenge mode. We then developed a hierarchical navigation system to make it easier to explore these features.</p>
                 <div class="row">
                     <div class="col-md-6">
                         <img class="pb-5" src="assets/images/FW-ia1.png" alt="">
@@ -226,23 +234,52 @@
                     </div>
                 </div>
             </div>
+            <!-- end of information architecture  -->
+
+            <!-- solution -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">solution.</h2>
+                <p class="fs-20 sec-text">Forwheels is an automotive learning application that enhances the learning experience of the users by introducting new concepts in a visually engaging manner. It helps grow users confidence in the things they’re already conversant with, and improves automobile maintenance practice using augmented reality technology.</p>
+            </div>
+            <!-- end of solution -->
+
+            <!-- features -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">key features.</h2>
+                <ul>
+                    <li class="fs-18 pb-2 sec-text">Immersive exploration and Interactive Simulations : Virtual models to enhance the learning experience for users.</li>
+                    <li class="fs-18 pb-2 sec-text">Customized Learning Paths: Walk throughs to aid learning through task completion.</li>
+                    <li class="fs-18 pb-2 sec-text">Point based system to encourage exploration and task completion.</li>
+                    <li class="fs-18 pb-2 sec-text">Engaging Assessments: Task based quizzes to enhance user engagement and increase long term memory retention.</li>
+                </ul>
+            </div>
+            <!-- end of features -->
+
+            <!-- wireframing  -->
+            <div class="pb-5">
+                <h2 class="fw-500 pb-2">wireframing.</h2>
+                <p class="fs-20 pb-4 sec-text">We created rough sketches to explore various design concepts on how to best solve this problem. By doing this, we were able to try out different variations, make changes, and refine the ideas swiftly.</p>
+                <img class="pb-5" src="assets/images/forwheels-sketch.png" alt="Sketches of the application">
+            </div>
+            <!-- end of wireframing  -->
 
             <div class="pb-5">
-                <h2 class="fw-500 pb-2">design system.</h2>
-                <p class="fs-20 pb-5">Throughout our design process, we carefully evaluated different aspects of the user interface, including spacing, typography, and color choices. This was done in order to ensure flexibility, which allows all the elements to function seamlessly together and maintain its functionality across a range of device resolutions. </p>
+                <h2 class="fw-500 pb-2">style components.</h2>
+                <p class="fs-20 pb-5 sec-text">Throughout our design process, we carefully evaluated different aspects of the user interface, including spacing, typography, and color choices. This was done in order to ensure flexibility, which allows all the elements to function seamlessly together and maintain its functionality across a range of device resolutions. </p>
                 <img class="pb-5" src="assets/images/FW-sc.png" alt="">
             </div>
 
             <div class="pb-5">
-                <h2 class="fw-500 pb-2">the design.</h2>
-                <img class="pb-5" src="assets/images/FW-hf1.png" alt="">
-                <img class="pb-5" src="assets/images/FW-hf2.png" alt="">
-                <img class="pb-5" src="assets/images/FW-hf3.png" alt="">
-                <img class="pb-5" src="assets/images/FW-hf4.png" alt="">
-                <img class="pb-5" src="assets/images/FW-hf5.png" alt="">
-                <img class="pb-5" src="assets/images/FW-hf6.png" alt="">
+                <h2 class="fw-500 pb-5">the design.</h2>
+                <h5 class="pb-3">Learn mode</h5>
+                <img class="pb-5" src="assets/images/forwheels-learn.png" alt="Learn Mode">
+
+                <h5 class="pb-3 pt-5">Maintenance mode</h5>
+                <img class="pb-5" src="assets/images/forwheeels-maintenance.png" alt="Maintenance Mode">
+
+                <h5 class="pb-3 pt-5">Practice mode</h5>
+                <img class="pb-5" src="assets/images/forwheeels-practice.png" alt="Practice Mode">
             </div>
-            <!-- end of solution -->
         </div>
     </section>
     <!-- end of content -->
@@ -289,7 +326,7 @@
         <div class="pt-5 social">
             <div class="d-flex justify-content-between">
                 <div>
-                    <p>Made with ❤️  by Haneefah.</p>
+                    <p>Designed and developed by <a href="https://haneefahaliu.com/" style="text-decoration: underline;">Haneefah</a></p>
                 </div>
                 <div>
                     <a class="pr-5 fs-18 fw-500" href="https://www.instagram.com/haneefah.design/" target="_blank" class="mr-3">instagram</a>
@@ -303,9 +340,10 @@
     <!-- end of footer -->
 
 
-    <!-- bootstrap script  -->
+    <!--  scripts  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/top.js"></script>
 </body>
 </body>
 </html>

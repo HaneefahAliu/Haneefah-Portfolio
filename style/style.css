@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    background-image: url('/assets/images/background-img.png');
     background-color: #F5F0E6;
     color: #155B00;
     min-height: 100%;
@@ -23,6 +24,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1rem;
+
 }
 
 * {
@@ -57,11 +59,34 @@ img {
     position: relative;
     z-index: 1
 }
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: #155B00;
+    color: #F5F0E6;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  
+  #topBtn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    opacity: .8;
+  }
 /* End of General Styling */
 
 
 /* Header */
 .znav-container {
+    background-image: url('/assets/images/background-img.png');
     background-color: #F5F0E6;
     width: 80%;
     margin: auto;
@@ -78,7 +103,8 @@ img {
 @media (max-width: 61.99em) {
     .znav-container {
         max-height: 100vh;
-        overflow-y: auto
+        overflow-y: auto;
+        width: 100%;
     }
 }
 
@@ -252,6 +278,7 @@ img {
     background-color: #155B00;
     color: #F5F0E6;
     text-decoration: none;
+    opacity: 1;
 }
 
 .social a {
@@ -268,13 +295,12 @@ img {
 
 /* About */
 .important {
-    color: #8C4518;
-    font-weight: 500;
+    color: #155B00;
+    font-weight: 600;
 }
 
 a.email {
     text-decoration: underline;
-    color: #8C4518;
 }
 
 a.email:hover {
@@ -288,25 +314,33 @@ a.email:hover {
 
 
 /* Projects */
-.project-card {
-    border-radius: 10px;
-    padding: 60px;
+.project-btn {
+    background-color: #F5F0E6;
+    color: #155B00;
+    border: 1px solid #ddceae;
+    border-radius: 6px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    /* transform: scale(1.1); */
+    transition: transform 0.2s;
 }
 
-.project-btn {
-    border: none;
-    font-size: 18px;
-    border-bottom: 2px solid #FFF;
-    color: #FFF;
-    cursor: pointer;
-    margin: 4px 2px;
-}
+/* .project-btn i {
+    font-size: 24px;
+} */
 
 .project-btn:hover {
     text-decoration: none;
-    border-bottom: 0px;
-    transition: ease-in-out;
-    color: #FFF;
+    border: none;
+    background-color: #155B00;
+    color: #F5F0E6;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    opacity: 1;
 }
 /* End of Projects */
 
@@ -328,6 +362,10 @@ a.email:hover {
 /* Text Styles and Weight */
 .ade {
     font-family: 'Ade', sans-serif; 
+}
+
+.sec-text {
+    color: #646464; 
 }
 
 .fs-18 {
@@ -404,8 +442,6 @@ a.email:hover {
 .mb-6 {
     margin-bottom: 6rem;
 }
-
-
 /* End of Spacings */
 
 
@@ -419,3 +455,4 @@ a.email:hover {
         font-size: 32px;
     }
 }
+/* End of Responsive Design  */
